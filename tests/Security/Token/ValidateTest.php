@@ -13,14 +13,14 @@ use Ramsey\Uuid\Uuid;
 
 class ValidateTest extends TestCase
 {
-    /**
-     * @doesNotPerformAssertions
-     */
     public function testSuccess(): void
     {
         $token = new Token($value = Uuid::uuid4()->toString(), $expires = new DateTimeImmutable());
 
         $token->validate($value, $expires->modify('-1 secs'));
+
+        self::assertEquals($value, $token->getValue());
+        self::assertEquals($expires, $token->getExpires());
     }
 
     public function testWrong(): void
