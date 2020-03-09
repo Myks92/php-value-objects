@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 
-namespace Myks92\ValueObjects\Money;
+namespace Myks92\ValueObjects\Payment;
 
 
 use Myks92\ValueObjects\ValueObjectsInterface;
