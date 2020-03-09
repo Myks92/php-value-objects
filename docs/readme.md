@@ -6,3 +6,4 @@
 * [Security](usage/security.md)
 * [Option](usage/option.md)
 * [Money](usage/money.md)
+* [Payment](usage/payment.md)
