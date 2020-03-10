@@ -16,8 +16,8 @@ use Webmozart\Assert\Assert;
  */
 final class Phone implements ValueObjectInterface
 {
-    const PATTERN_COUNTRY = "/^[0-9]{1,3}$/";
-    const PATTERN_NUMBER = "/^[0-9]{10}$/";
+    public const PATTERN_COUNTRY = "/^[0-9]{1,3}$/";
+    public const PATTERN_NUMBER = "/^[0-9]{10}$/";
     /**
      * Country
      *

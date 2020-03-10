@@ -16,7 +16,7 @@ use Webmozart\Assert\Assert;
  */
 final class Username extends StringLiteral
 {
-    private const PATTERN_USERNAME = '/^([A-Za-z0-9]{5,31})$/';
+    public const PATTERN_USERNAME = '/^([A-Za-z0-9]{5,31})$/';
 
     /**
      * @param string $value

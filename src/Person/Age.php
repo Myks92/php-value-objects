@@ -19,11 +19,11 @@ final class Age extends Integer
     /**
      * @var string min value age
      */
-    const MIN_VALUE = 1;
+    public const MIN_VALUE = 1;
     /**
      * @var string max value age
      */
-    const MAX_VALUE = 180;
+    public const MAX_VALUE = 180;
 
     /**
      * @param int $value
