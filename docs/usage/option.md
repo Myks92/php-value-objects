@@ -6,7 +6,7 @@
 use Myks92\ValueObjects\Option\Role;
 
 $role = new Role('admin');
-$role->getName(); //admin
+$role->getValue(); //admin
 ```
 
 ## Status
@@ -15,5 +15,5 @@ $role->getName(); //admin
 use Myks92\ValueObjects\Option\Status;
 
 $status = new Status('active');
-$status->getName(); //active
+$status->getValue(); //active
 ```

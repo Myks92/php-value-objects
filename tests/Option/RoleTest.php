@@ -15,15 +15,15 @@ class RoleTest extends TestCase
     {
         $role = new Role($name = 'admin');
 
-        self::assertEquals($name, $role->getName());
+        self::assertEquals($name, $role->getValue());
     }
 
     public function testEqual(): void
     {
         $role = new Role($name = 'admin');
 
-        self::assertTrue($role->isEqual($role));
-        self::assertFalse($role->isEqual(new Role($name = 'admin2')));
+        self::assertTrue($role->isEqualTo($role));
+        self::assertFalse($role->isEqualTo(new Role($name = 'admin2')));
     }
 
     public function testToString(): void

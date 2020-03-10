@@ -15,15 +15,15 @@ class StatusTest extends TestCase
     {
         $status = new Status($name = 'active');
 
-        self::assertEquals($name, $status->getName());
+        self::assertEquals($name, $status->getValue());
     }
 
     public function testEqual(): void
     {
         $status = new Status($name = 'admin');
 
-        self::assertTrue($status->isEqual($status));
-        self::assertFalse($status->isEqual(new Status($name = 'admin2')));
+        self::assertTrue($status->isEqualTo($status));
+        self::assertFalse($status->isEqualTo(new Status($name = 'admin2')));
     }
 
     public function testToString(): void
