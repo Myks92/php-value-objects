@@ -6,7 +6,7 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Content;
 
 
-use Myks92\ValueObjects\StringValueObject;
+use Myks92\ValueObjects\String\StringValueObject;
 
 /**
  * Class Tag

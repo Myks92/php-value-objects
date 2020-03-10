@@ -7,7 +7,7 @@ namespace Myks92\ValueObjects\Identity;
 
 
 use Exception;
-use Myks92\ValueObjects\StringValueObject;
+use Myks92\ValueObjects\String\StringValueObject;
 use Ramsey\Uuid\Uuid;
 use Webmozart\Assert\Assert;
 

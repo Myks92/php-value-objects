@@ -3,9 +3,10 @@
 declare(strict_types=1);
 
 
-namespace Myks92\ValueObjects;
+namespace Myks92\ValueObjects\String;
 
 
+use Myks92\ValueObjects\ValueObjectInterface;
 use Webmozart\Assert\Assert;
 
 /**

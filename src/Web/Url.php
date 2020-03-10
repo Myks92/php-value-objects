@@ -7,7 +7,7 @@ namespace Myks92\ValueObjects\Web;
 
 
 use InvalidArgumentException;
-use Myks92\ValueObjects\StringValueObject;
+use Myks92\ValueObjects\String\StringValueObject;
 
 /**
  * Class Url
