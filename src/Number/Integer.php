@@ -9,11 +9,11 @@ namespace Myks92\ValueObjects\Number;
 use Myks92\ValueObjects\ValueObjectInterface;
 
 /**
- * Class IntegerValueObject
+ * Class Integer
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-abstract class IntegerValueObject implements ValueObjectInterface
+abstract class Integer implements ValueObjectInterface
 {
     /**
      * @var int
@@ -45,7 +45,7 @@ abstract class IntegerValueObject implements ValueObjectInterface
     }
 
     /**
-     * @param IntegerValueObject $value
+     * @param Integer $value
      *
      * @return bool
      */

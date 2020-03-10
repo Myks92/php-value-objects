@@ -6,7 +6,7 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Person;
 
 
-use Myks92\ValueObjects\Number\IntegerValueObject;
+use Myks92\ValueObjects\Number\Integer;
 use Webmozart\Assert\Assert;
 
 /**
@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Age extends IntegerValueObject
+final class Age extends Integer
 {
     /**
      * @var string min value age
