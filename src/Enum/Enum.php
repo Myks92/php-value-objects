@@ -90,7 +90,7 @@ abstract class Enum implements ValueObjectInterface
      */
     public function __toString(): string
     {
-        return $this->getValue();
+        return (string)$this->getValue();
     }
 
     /**
