@@ -11,4 +11,4 @@
 * [Money](usage/money.md)
 * [Payment](usage/payment.md)
 * [Content](usage/content.md)
-* [Contact](usage/contact.md)
+* [Enum](usage/enum.md)
