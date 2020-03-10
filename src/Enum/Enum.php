@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Enum;
 
 
+use InvalidArgumentException;
 use Myks92\ValueObjects\ValueObjectInterface;
 use ReflectionClass;
 use ReflectionException;
@@ -48,6 +49,40 @@ abstract class Enum implements ValueObjectInterface
         Assert::oneOf($value, $this->toArray());
 
         $this->value = $value;
+    }
+
+    /**
+     * Returns a value when called statically like so: MyEnum::someValue() given SOME_VALUE is a class constant
+     *
+     * @param string $name
+     * @param array $arguments
+     *
+     * @return static
+     * @throws ReflectionException
+     * @throws InvalidArgumentException if no static method or enum constant
+     */
+    public static function __callStatic($name, $arguments)
+    {
+        $array = static::toArray();
+        $name = static::convertUnCamelCase($name);
+
+        Assert::keyExists($array, $name, "No static method or enum constant '$name' in class " . static::class);
+
+        return new static($array[$name]);
+    }
+
+    /**
+     * Converter to un camel Case
+     *
+     * Using for constant `STATUS_NAME` to `statusName`
+     *
+     * @param $name
+     *
+     * @return string
+     */
+    protected static function convertUnCamelCase($name): string
+    {
+        return strtoupper(preg_replace('/([a-z])([A-Z])/', "\\1_\\2", $name));
     }
 
     /**
