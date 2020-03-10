@@ -6,7 +6,7 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Web;
 
 
-use Myks92\ValueObjects\IntegerValueObject;
+use Myks92\ValueObjects\Number\IntegerValueObject;
 use Webmozart\Assert\Assert;
 
 /**

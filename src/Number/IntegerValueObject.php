@@ -3,8 +3,10 @@
 declare(strict_types=1);
 
 
-namespace Myks92\ValueObjects;
+namespace Myks92\ValueObjects\Number;
 
+
+use Myks92\ValueObjects\ValueObjectInterface;
 
 /**
  * Class IntegerValueObject
