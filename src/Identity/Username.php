@@ -6,7 +6,7 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Identity;
 
 
-use Myks92\ValueObjects\StringValueObjects;
+use Myks92\ValueObjects\StringValueObject;
 use Webmozart\Assert\Assert;
 
 /**
@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Username extends StringValueObjects
+final class Username extends StringValueObject
 {
     private const USERNAME_REGEX = '/^([A-Za-z0-9]{5,31})$/';
 

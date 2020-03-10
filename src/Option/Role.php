@@ -6,7 +6,7 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Option;
 
 
-use Myks92\ValueObjects\ValueObjectsInterface;
+use Myks92\ValueObjects\ValueObjectInterface;
 use Webmozart\Assert\Assert;
 
 /**
@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Role implements ValueObjectsInterface
+final class Role implements ValueObjectInterface
 {
     /**
      * @var string

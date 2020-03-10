@@ -6,7 +6,7 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Person;
 
 
-use Myks92\ValueObjects\StringValueObjects;
+use Myks92\ValueObjects\StringValueObject;
 use Webmozart\Assert\Assert;
 
 /**
@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Gender extends StringValueObjects
+final class Gender extends StringValueObject
 {
     /**
      * @var string value for male

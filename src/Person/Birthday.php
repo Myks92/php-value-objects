@@ -9,14 +9,14 @@ namespace Myks92\ValueObjects\Person;
 use DateTimeImmutable;
 use Exception;
 use InvalidArgumentException;
-use Myks92\ValueObjects\ValueObjectsInterface;
+use Myks92\ValueObjects\ValueObjectInterface;
 
 /**
  * Class Birthday
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Birthday implements ValueObjectsInterface
+final class Birthday implements ValueObjectInterface
 {
     /**
      * @var DateTimeImmutable

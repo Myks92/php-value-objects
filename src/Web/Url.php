@@ -7,14 +7,14 @@ namespace Myks92\ValueObjects\Web;
 
 
 use InvalidArgumentException;
-use Myks92\ValueObjects\StringValueObjects;
+use Myks92\ValueObjects\StringValueObject;
 
 /**
  * Class Url
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Url extends StringValueObjects
+final class Url extends StringValueObject
 {
     /**
      * @param string $value

@@ -6,7 +6,7 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Money;
 
 
-use Myks92\ValueObjects\ValueObjectsInterface;
+use Myks92\ValueObjects\ValueObjectInterface;
 use ReflectionClass;
 use ReflectionException;
 use Webmozart\Assert\Assert;
@@ -16,7 +16,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Currency implements ValueObjectsInterface
+final class Currency implements ValueObjectInterface
 {
     public const AED = 'AED';
     public const AFN = 'AFN';

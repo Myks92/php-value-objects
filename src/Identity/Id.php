@@ -7,7 +7,7 @@ namespace Myks92\ValueObjects\Identity;
 
 
 use Exception;
-use Myks92\ValueObjects\StringValueObjects;
+use Myks92\ValueObjects\StringValueObject;
 use Ramsey\Uuid\Uuid;
 use Webmozart\Assert\Assert;
 
@@ -16,7 +16,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Id extends StringValueObjects
+final class Id extends StringValueObject
 {
     /**
      * @param string $value

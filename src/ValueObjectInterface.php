@@ -10,7 +10,7 @@ namespace Myks92\ValueObjects;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-interface ValueObjectsInterface
+interface ValueObjectInterface
 {
     /**
      * @return string representation of the object
@@ -20,7 +20,7 @@ interface ValueObjectsInterface
     /**
      * Indicates if this value object is equal to abother value object
      *
-     * @param ValueObjectsInterface $object othervalue object to compare to
+     * @param ValueObjectInterface $object othervalue object to compare to
      *
      * @return boolean true if equal otherwise false
      */

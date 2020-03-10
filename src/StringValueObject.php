@@ -6,23 +6,26 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects;
 
 
+use Webmozart\Assert\Assert;
+
 /**
- * Class IntegerValueObjects
+ * Class StringValueObject
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-abstract class IntegerValueObjects implements ValueObjectsInterface
+abstract class StringValueObject implements ValueObjectInterface
 {
     /**
-     * @var int
+     * @var string
      */
-    private int $value;
+    private string $value;
 
     /**
-     * @param int $value
+     * @param string $value
      */
-    public function __construct(int $value)
+    public function __construct(string $value)
     {
+        Assert::notEmpty($value);
         $this->value = $value;
     }
 
@@ -31,19 +34,19 @@ abstract class IntegerValueObjects implements ValueObjectsInterface
      */
     public function __toString(): string
     {
-        return (string)$this->getValue();
+        return $this->getValue();
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getValue(): int
+    public function getValue(): string
     {
         return $this->value;
     }
 
     /**
-     * @param IntegerValueObjects $value
+     * @param StringValueObject $value
      *
      * @return bool
      */

@@ -6,7 +6,7 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Contact;
 
 
-use Myks92\ValueObjects\StringValueObjects;
+use Myks92\ValueObjects\StringValueObject;
 use Webmozart\Assert\Assert;
 
 /**
@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Email extends StringValueObjects
+final class Email extends StringValueObject
 {
     /**
      * @param string $value

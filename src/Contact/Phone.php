@@ -6,7 +6,7 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Contact;
 
 
-use Myks92\ValueObjects\ValueObjectsInterface;
+use Myks92\ValueObjects\ValueObjectInterface;
 use Webmozart\Assert\Assert;
 
 /**
@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Phone implements ValueObjectsInterface
+final class Phone implements ValueObjectInterface
 {
     const PATTERN_COUNTRY = "/^[0-9]{1,3}$/";
     const PATTERN_NUMBER = "/^[0-9]{10}$/";
