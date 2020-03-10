@@ -8,7 +8,7 @@ For job with currency
 use Myks92\ValueObjects\Money\Currency;
 
 $currency = new Currency('USD');
-$currency->getCode(); //USD
+$currency->getValue(); //USD
 $currency->isEqualTo(new Currency('RUB')); //false
 ```
 
@@ -26,7 +26,7 @@ $currency = new Currency('USD');
 $money = new Money(100, $currency);
 
 $money->getAmount(); //100
-$money->getCurrency()->getCode(); //USD
+$money->getCurrency()->getValue(); //USD
 ```
 
 ### Calculations

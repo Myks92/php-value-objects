@@ -6,17 +6,14 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Money;
 
 
-use Myks92\ValueObjects\ValueObjectInterface;
-use ReflectionClass;
-use ReflectionException;
-use Webmozart\Assert\Assert;
+use Myks92\ValueObjects\Enum\Enum;
 
 /**
  * Class Currency for job with money
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Currency implements ValueObjectInterface
+final class Currency extends Enum
 {
     public const AED = 'AED';
     public const AFN = 'AFN';
@@ -178,55 +175,4 @@ final class Currency implements ValueObjectInterface
     public const ZAR = 'ZAR';
     public const ZMK = 'ZMK';
     public const ZWL = 'ZWL';
-
-    /**
-     * @var string
-     */
-    protected string $code;
-
-    /**
-     * @param string $code
-     *
-     * @throws ReflectionException
-     */
-    public function __construct(string $code)
-    {
-        Assert::oneOf($code, $this->toArray());
-        $this->code = $code;
-    }
-
-    /**
-     * @return array
-     * @throws ReflectionException
-     */
-    public function toArray(): array
-    {
-        return (new ReflectionClass(static::class))->getConstants();
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public function __toString(): string
-    {
-        return $this->getCode();
-    }
-
-    /**
-     * @return string
-     */
-    public function getCode(): string
-    {
-        return $this->code;
-    }
-
-    /**
-     * @param Currency $currency
-     *
-     * @return bool
-     */
-    public function isEqualTo(self $currency): bool
-    {
-        return $this->getCode() === $currency->getCode();
-    }
 }

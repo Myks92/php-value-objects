@@ -103,7 +103,7 @@ final class Money implements ValueObjectInterface
      */
     public function __toString(): string
     {
-        return (string)$this->getAmount() . ' ' . $this->getCurrency()->getCode();
+        return (string)$this->getAmount() . ' ' . $this->getCurrency()->getValue();
     }
 
     /**

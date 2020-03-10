@@ -16,8 +16,8 @@ class CurrencyTest extends TestCase
     {
         $currency = new Currency($code = 'USD');
 
-        self::assertEquals($code, $currency->getCode());
-        self::assertIsArray($currency->toArray());
+        self::assertEquals($code, $currency->getValue());
+        self::assertIsArray($currency::toArray());
     }
 
     public function testEqual(): void

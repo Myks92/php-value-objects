@@ -26,7 +26,7 @@ class MoneyTest extends TestCase
     {
         $money = new Money($amount = 100, $currency = $this->createCurrency());
 
-        self::assertEquals($amount . ' ' . $currency->getCode(), $money);
+        self::assertEquals($amount . ' ' . $currency->getValue(), $money);
     }
 
     public function testEqual(): void

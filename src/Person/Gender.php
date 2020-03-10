@@ -6,7 +6,9 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Person;
 
 
+use Myks92\ValueObjects\Enum\Enum;
 use Myks92\ValueObjects\String\StringLiteral;
+use ReflectionException;
 use Webmozart\Assert\Assert;
 
 /**
@@ -14,7 +16,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Gender extends StringLiteral
+final class Gender extends Enum
 {
     /**
      * @var string value for male
@@ -30,27 +32,10 @@ final class Gender extends StringLiteral
     public const OTHER = 'other';
 
     /**
-     * @var string
-     */
-    public string $value;
-
-    /**
-     * @param string $value
-     */
-    public function __construct(string $value)
-    {
-        Assert::oneOf($value, [
-            self::MALE,
-            self::FEMALE,
-            self::OTHER
-        ]);
-        parent::__construct($value);
-    }
-
-    /**
      * Create male
      *
      * @return static
+     * @throws ReflectionException
      */
     public static function male(): self
     {
@@ -61,6 +46,7 @@ final class Gender extends StringLiteral
      * Create female
      *
      * @return static
+     * @throws ReflectionException
      */
     public static function female(): self
     {
@@ -71,6 +57,7 @@ final class Gender extends StringLiteral
      * Create other
      *
      * @return static
+     * @throws ReflectionException
      */
     public static function other(): self
     {
