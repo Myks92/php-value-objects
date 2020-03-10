@@ -1,4 +1,4 @@
-# Value Objects
+# PHP Value Objects
 
 [![Packagist Version](https://poser.pugx.org/myks92/php-value-objects/v/stable.png)](https://packagist.org/packages/myks92/php-value-objects
 ) [![Total Downloads](https://poser.pugx.org/myks92/php-value-objects/v/unstable.png)](https://packagist.org/packages/myks92/php-value-objects
