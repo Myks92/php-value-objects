@@ -1,6 +1,5 @@
-.*                  export-ignore
-*.md                export-ignore
-tests               export-ignore
-docs                export-ignore
-phpunit.xml.dist    export-ignore
-composer.lock       export-ignore
+/.*                  export-ignore
+/tests               export-ignore
+/docs                export-ignore
+/phpunit.xml.dist    export-ignore
+/composer.lock       export-ignore
