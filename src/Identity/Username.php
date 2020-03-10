@@ -16,14 +16,14 @@ use Webmozart\Assert\Assert;
  */
 final class Username extends StringLiteral
 {
-    private const USERNAME_REGEX = '/^([A-Za-z0-9]{5,31})$/';
+    private const PATTERN_USERNAME = '/^([A-Za-z0-9]{5,31})$/';
 
     /**
      * @param string $value
      */
     public function __construct(string $value)
     {
-        Assert::regex($value, self::USERNAME_REGEX);
+        Assert::regex($value, self::PATTERN_USERNAME);
         parent::__construct($value);
     }
 }
