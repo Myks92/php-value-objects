@@ -10,11 +10,11 @@ use Myks92\ValueObjects\ValueObjectInterface;
 use Webmozart\Assert\Assert;
 
 /**
- * Class StringValueObject
+ * Class StringLiteral
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-abstract class StringValueObject implements ValueObjectInterface
+abstract class StringLiteral implements ValueObjectInterface
 {
     /**
      * @var string
@@ -47,7 +47,7 @@ abstract class StringValueObject implements ValueObjectInterface
     }
 
     /**
-     * @param StringValueObject $value
+     * @param StringLiteral $value
      *
      * @return bool
      */
