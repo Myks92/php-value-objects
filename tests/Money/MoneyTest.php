@@ -10,6 +10,7 @@ use InvalidArgumentException;
 use Myks92\ValueObjects\Money\Currency;
 use Myks92\ValueObjects\Money\Money;
 use PHPUnit\Framework\TestCase;
+use ReflectionException;
 
 class MoneyTest extends TestCase
 {
@@ -98,7 +99,7 @@ class MoneyTest extends TestCase
      * @param string $code
      *
      * @return Currency
-     * @throws \ReflectionException
+     * @throws ReflectionException
      */
     private function createCurrency($code = 'USD'): Currency
     {

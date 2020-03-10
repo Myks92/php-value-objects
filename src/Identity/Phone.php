@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 
-namespace Myks92\ValueObjects\Contact;
+namespace Myks92\ValueObjects\Identity;
 
 
 use Myks92\ValueObjects\ValueObjectInterface;

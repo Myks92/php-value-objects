@@ -40,7 +40,7 @@ class BirthdayTest extends TestCase
 
     public function testFuture(): void
     {
-        $now = new \DateTimeImmutable();
+        $now = new DateTimeImmutable();
 
         $this->expectExceptionMessage('Is date from the future.');
         new Birthday($now->modify('+1 year'));

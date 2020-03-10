@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 
-namespace Myks92\ValueObjects\Tests\Contact;
+namespace Myks92\ValueObjects\Tests\Identity;
 
 
 use InvalidArgumentException;
-use Myks92\ValueObjects\Contact\Phone;
+use Myks92\ValueObjects\Identity\Phone;
 use PHPUnit\Framework\TestCase;
 
 class PhoneTest extends TestCase

@@ -6,6 +6,7 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Tests\Identity;
 
 
+use Exception;
 use InvalidArgumentException;
 use Myks92\ValueObjects\Identity\Id;
 use PHPUnit\Framework\TestCase;
@@ -67,7 +68,7 @@ class IdTest extends TestCase
      * @param $value
      *
      * @return Id
-     * @throws \Exception
+     * @throws Exception
      */
     private function createId($value = null): Id
     {

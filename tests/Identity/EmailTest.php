@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 
-namespace Myks92\ValueObjects\Tests\Contact;
+namespace Myks92\ValueObjects\Tests\Identity;
 
 
 use InvalidArgumentException;
-use Myks92\ValueObjects\Contact\Email;
+use Myks92\ValueObjects\Identity\Email;
 use PHPUnit\Framework\TestCase;
 
 class EmailTest extends TestCase
