@@ -14,7 +14,7 @@ use Myks92\ValueObjects\StringValueObjects;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Url extends StringValueObjects
+final class Url extends StringValueObjects
 {
     /**
      * @param string $value

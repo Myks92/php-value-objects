@@ -16,7 +16,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Currency implements ValueObjectsInterface
+final class Currency implements ValueObjectsInterface
 {
     public const AED = 'AED';
     public const AFN = 'AFN';

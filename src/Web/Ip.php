@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Ip extends StringValueObjects
+final class Ip extends StringValueObjects
 {
     /**
      * @param string $value

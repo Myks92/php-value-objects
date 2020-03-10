@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Status implements ValueObjectsInterface
+final class Status implements ValueObjectsInterface
 {
     /**
      * @var string

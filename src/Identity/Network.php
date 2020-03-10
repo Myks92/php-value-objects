@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Network implements ValueObjectsInterface
+final class Network implements ValueObjectsInterface
 {
     /**
      * @var string

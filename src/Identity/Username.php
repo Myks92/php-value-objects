@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Username extends StringValueObjects
+final class Username extends StringValueObjects
 {
     private const USERNAME_REGEX = '/^([A-Za-z0-9]{5,31})$/';
 

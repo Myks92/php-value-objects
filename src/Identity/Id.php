@@ -16,7 +16,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Id extends StringValueObjects
+final class Id extends StringValueObjects
 {
     /**
      * @param string $value

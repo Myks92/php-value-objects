@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Coordinate implements ValueObjectsInterface
+final class Coordinate implements ValueObjectsInterface
 {
     /**
      * @var int min value for latitude

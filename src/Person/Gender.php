@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Gender extends StringValueObjects
+final class Gender extends StringValueObjects
 {
     /**
      * @var string value for male

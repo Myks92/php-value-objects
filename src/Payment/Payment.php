@@ -13,7 +13,7 @@ use Myks92\ValueObjects\ValueObjectsInterface;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Payment implements ValueObjectsInterface
+final class Payment implements ValueObjectsInterface
 {
     /**
      * @var string $method The payment name or title.

@@ -13,6 +13,6 @@ use Myks92\ValueObjects\StringValueObjects;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Description extends StringValueObjects
+final class Description extends StringValueObjects
 {
 }

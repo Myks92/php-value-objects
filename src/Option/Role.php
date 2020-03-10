@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Role implements ValueObjectsInterface
+final class Role implements ValueObjectsInterface
 {
     /**
      * @var string

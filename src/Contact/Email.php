@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Email extends StringValueObjects
+final class Email extends StringValueObjects
 {
     /**
      * @param string $value

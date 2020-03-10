@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Age extends IntegerValueObjects
+final class Age extends IntegerValueObjects
 {
     /**
      * @var string min value age

@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Port extends IntegerValueObjects
+final class Port extends IntegerValueObjects
 {
     /**
      * @param int $value
