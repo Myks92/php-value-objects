@@ -1,17 +1,16 @@
 # PHP Value Objects
 
-[![Packagist Version](https://poser.pugx.org/myks92/php-value-objects/v/stable.png)](https://packagist.org/packages/myks92/php-value-objects
+[![Packagist Version][stable]](https://packagist.org/packages/myks92/php-value-objects
 ) [![Total Downloads](https://poser.pugx.org/myks92/php-value-objects/v/unstable.png)](https://packagist.org/packages/myks92/php-value-objects
 ) [![Software License](https://poser.pugx.org/myks92/php-value-objects/license)](LICENSE.md)
-
+[![PHP Version][badge-php]][php]
 [![Total Downloads](https://poser.pugx.org/myks92/php-value-objects/downloads)](https://packagist.org/packages/myks92/php-value-objects)
-[![Monthly Downloads](https://poser.pugx.org/myks92/php-value-objects/d/monthly)](https://packagist.org/packages/myks92/php-value-objects)
-[![Daily Downloads](https://poser.pugx.org/myks92/php-value-objects/d/daily)](https://packagist.org/packages/myks92/php-value-objects)
+[![composer.lock](https://poser.pugx.org/myks92/php-value-objects/composerlock)](https://packagist.org/packages/myks92/php-value-objects)
 
 Branch | Travis |
 ------ | ------ |
-1.x   | [![Build Status][travis_1x_badge]][travis_1x_link]
-master | [![Build Status][travis_unstable_badge]][travis_unstable_link]
+1.x   | [![Build Status][badge-travis-1x]][travis-1x]
+master | [![Build Status][badge-travis-unstable]][travis-unstable]
 
 A set of PHP Value Objects to manage simple and composite values.
 
@@ -36,7 +35,7 @@ composer require myks92/php-value-objects
 
 ## Documentation
 
-All use instructions are located in [documentation](./docs/readme.md).
+All use instructions are located in [documentation][].
 
 ## Testing
 
@@ -46,13 +45,21 @@ composer test
 
 ## Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+Please see [CHANGELOG][] for more information on what has changed recently.
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [LICENSE][] for more information.
 
-[travis_1x_badge]: https://travis-ci.org/Myks92/php-value-objects.svg?branch=1.x
-[travis_1x_link]: https://travis-ci.org/Myks92/php-value-objects
-[travis_unstable_badge]: https://travis-ci.org/Myks92/php-value-objects.svg?branch=master
-[travis_unstable_link]: https://travis-ci.org/Myks92/php-value-objects
+[badge-php]: https://img.shields.io/packagist/php-v/Myks92/php-value-objects.svg?style=flat-square
+[badge-travis-1x]: https://travis-ci.org/Myks92/php-value-objects.svg?branch=1.x
+[badge-travis-unstable]: https://travis-ci.org/Myks92/php-value-objects.svg?branch=master
+
+[documentation]: https://github.com/Myks92/php-value-objects/blob/master/docs/readme.md
+[source]: https://github.com/Myks92/php-value-objects
+[stable]: https://poser.pugx.org/myks92/php-value-objects/v/stable.png
+[changelog]: https://github.com/Myks92/php-value-objects/blob/master/CHANGELOG.md
+[license]: https://github.com/Myks92/php-value-objects/blob/master/LICENSE.md
+[php]: https://php.net
+[travis-1x]: https://travis-ci.org/Myks92/php-value-objects
+[travis-unstable]: https://travis-ci.org/Myks92/php-value-objects
