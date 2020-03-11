@@ -1,17 +1,14 @@
 # Enum
+This groups Value Objects use for any options, e.g status, role, gender or another objects with key-value.
 
 ## Available Methods
-
 * `__construct()` The constructor checks that the value exist in the enum
 * `__toString()` You can `echo $myValue`, it will display the enum value (value of the constant)
 * `getValue()` Returns the current value of the enum
 * `isEqualTo()` Tests whether enum instances are equal (returns `true` if enum values are equal, `false` otherwise)
 
 Static methods:
-
 * `toArray()` method Returns all possible values as an array (constant name in key, constant value in value)
-
-## Usage
 
 ```php
 use Myks92\ValueObjects\Enum\Enum;

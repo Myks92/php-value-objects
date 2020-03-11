@@ -1,7 +1,7 @@
 # Security
+This groups Value Objects use for security, e.g. for auth users.
 
 ## Token
-
 ```php
 use Myks92\ValueObjects\Security\Token;
 

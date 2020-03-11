@@ -1,7 +1,7 @@
-# Web Object Values
+# Web
+This group Value Objects is used to work in the web part.
 
 ## File
-
 ```php
 use Myks92\ValueObjects\Web\File;
 
@@ -16,7 +16,6 @@ $file->isEqualTo($file2); //false
 ```
 
 ## Ip
-
 ```php
 use Myks92\ValueObjects\Web\Ip;
 
@@ -27,7 +26,6 @@ $ip->isEqualTo(new Ip('127.0.0.2')); //false
 ```
 
 ## Port
-
 ```php
 use Myks92\ValueObjects\Web\Port;
 
@@ -38,7 +36,6 @@ $port->isEqualTo(new Port(80)); //true
 ```
 
 ## Url
-
 ```php
 use Myks92\ValueObjects\Web\Url;
 

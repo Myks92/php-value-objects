@@ -1,7 +1,7 @@
 # Identity
+This groups Value Objects use for identity, e.g. for auth to users in your project. Or for another Entities.
 
 ## Id
-
 ```php
 use Myks92\ValueObjects\Identity\Id;
 use Ramsey\Uuid\Uuid;
@@ -12,7 +12,6 @@ $id->isEqualTo(new Id(Uuid::uuid4()->toString())); //false
 ```
 
 ## Email
-
 ```php
 use Myks92\ValueObjects\Identity\Email;
 
@@ -25,7 +24,6 @@ $email->isEqualTo(new Email('email-other@app.test')); //false
 ```
 
 ## Phone
-
 ```php
 use Myks92\ValueObjects\Identity\Phone;
 
@@ -38,7 +36,6 @@ $phone->isEqualTo(new Phone(7, '9997772233')); //false
 ```
 
 ## Network
-
 ```php
 use Myks92\ValueObjects\Identity\Network;
 
@@ -50,7 +47,6 @@ $network->isEqualTo(new Network('vk', '11123')); //false
 ```
 
 ## Username
-
 ```php
 use Myks92\ValueObjects\Identity\Username;
 

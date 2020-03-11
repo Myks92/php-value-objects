@@ -22,7 +22,7 @@ Value Objects are PHP [`objects`](http://php.net/manual/en/language.types.object
 
 Simple value objects represent a simple value, like an email. Complex value objects represent complex values, that, in order to really represent a value, need more than one value, like a price that needs an amount and a currency to be understandable and have a sense.
 
-PHP supports only two value object: the [`DateTime`](https://www.php.net/manual/en/class.datetime.php) object and
+PHP supports several value object e.g.: the [`DateTime`](https://www.php.net/manual/en/class.datetime.php) object and
  [`DateTimeImmutable`](https://www.php.net/manual/ru/class.datetimeimmutable.php) object.
 
 This library gives support for other kind of values.

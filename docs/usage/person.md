@@ -1,7 +1,7 @@
 # Person
+This groups Value Objects use for person, e.g. for employees, or for any other person in your projects.
 
 ## Birthday
-
 ```php
 use Myks92\ValueObjects\Person\Birthday;
 
@@ -11,17 +11,14 @@ $birthday->getDate()->format('Y-m-d'); //2011-01-01
 ```
 
 ## Age
-
 ```php
-use Myks92\ValueObjects\Person\Birthday;
+use Myks92\ValueObjects\Person\Age;
 
-$birthday = new Birthday(new DateTimeImmutable('2011-01-01'));
-$birthday->getAge(); //get age...
-$birthday->getDate()->format('Y-m-d'); //2011-01-01
+$birthday = new Age(12);
+$birthday->getValue(); //12
 ```
 
 ## Gender
-
 ```php
 use Myks92\ValueObjects\Person\Gender;
 
@@ -35,7 +32,6 @@ $gender->isEqualTo(new Gender('female')); //false
 ```
 
 Factory create
-
 ```php
 use Myks92\ValueObjects\Person\Gender;
 
@@ -45,7 +41,6 @@ Gender::other()->getValue(); //other
 ```
 
 ## Name
-
 ```php
 use Myks92\ValueObjects\Person\Name;
 
@@ -60,7 +55,6 @@ $name->getFull(', '); //Last, First, Middle
 ```
 
 ## Position
-
 ```php
 use Myks92\ValueObjects\Person\Position;
 

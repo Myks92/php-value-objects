@@ -1,4 +1,5 @@
 # Geography
+This groups Value Objects use for geography, e.g. for cities, address or for another.
 
 ## Coordinate
 

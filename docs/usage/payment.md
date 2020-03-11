@@ -1,5 +1,7 @@
 # Payment
+This groups Value Objects use for work with payments.
 
+## Payment
 ```php
 use Myks92\ValueObjects\Payment\Payment;
 
