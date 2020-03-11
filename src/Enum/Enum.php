@@ -42,10 +42,7 @@ abstract class Enum implements ValueObjectInterface
      */
     public function __construct($value)
     {
-        if ($value instanceof static) {
-            $value = $value->getValue();
-        }
-
+        Assert::notEmpty($value);
         Assert::oneOf($value, $this->toArray());
 
         $this->value = $value;
@@ -80,7 +77,7 @@ abstract class Enum implements ValueObjectInterface
      *
      * @return string
      */
-    protected static function convertUnCamelCase($name): string
+    private static function convertUnCamelCase($name): string
     {
         return strtoupper(preg_replace('/([a-z])([A-Z])/', "\\1_\\2", $name));
     }
