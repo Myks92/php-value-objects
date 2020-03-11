@@ -7,9 +7,7 @@ namespace Myks92\ValueObjects\Person;
 
 
 use Myks92\ValueObjects\Enum\Enum;
-use Myks92\ValueObjects\String\StringLiteral;
 use ReflectionException;
-use Webmozart\Assert\Assert;
 
 /**
  * Class Gender
