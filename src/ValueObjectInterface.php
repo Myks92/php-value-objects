@@ -18,9 +18,9 @@ interface ValueObjectInterface
     public function __toString(): string;
 
     /**
-     * Indicates if this value object is equal to abother value object
+     * Indicates if this value object is equal to another value object
      *
-     * @param ValueObjectInterface $object othervalue object to compare to
+     * @param ValueObjectInterface $object other value object to compare to
      *
      * @return boolean true if equal otherwise false
      */

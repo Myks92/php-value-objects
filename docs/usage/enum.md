@@ -16,6 +16,13 @@ Static methods:
 ```php
 use Myks92\ValueObjects\Enum\Enum;
 
+/**
+ * @method static Status wait()
+ * @method static Status active()
+ * @method static Status blocked()
+ * 
+ * @author Maxim Vorozhtsov <myks1992@mail.ru>
+ */
 class Status extends Enum
 {
     private const WAIT = 'wait';
@@ -57,7 +64,6 @@ Static method helpers are implemented using [`__callStatic()`](https://www.php.n
 .overloading.php#object.callstatic).
 
 If you care about IDE autocompletion, you can either implement the static methods yourself:
-
 
 ```php
 use Myks92\ValueObjects\Enum\Enum;

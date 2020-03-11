@@ -6,7 +6,7 @@
 use Myks92\ValueObjects\Person\Birthday;
 
 $birthday = new Birthday(new DateTimeImmutable('2011-01-01'));
-$birthday->getAge(new DateTimeImmutable()); //get Age::class
+$birthday->getAge(); //get Age::class
 $birthday->getDate()->format('Y-m-d'); //2011-01-01
 ```
 
