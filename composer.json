@@ -1,7 +1,7 @@
 {
   "name": "myks92/php-value-objects",
   "description": "A PHP library Value Object",
-  "keywords": ["vo", "value object", "architecture", "domain driven design"],
+  "keywords": ["vo", "value-object", "architecture", "domain-driven-design"],
   "type": "library",
   "license": "MIT",
   "authors": [
