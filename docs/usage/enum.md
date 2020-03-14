@@ -57,8 +57,7 @@ $status = Status::active();
 $status = Status::blocked();
 ```
 
-Static method helpers are implemented using [`__callStatic()`](https://www.php.net/manual/en/language.oop5)
-.overloading.php#object.callstatic).
+Static method helpers are implemented using [`__callStatic()`](https://www.php.net/manual/en/language.oop5.overloading.php#object.callstatic).
 
 If you care about IDE autocompletion, you can either implement the static methods yourself:
 
