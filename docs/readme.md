@@ -9,7 +9,6 @@ Value Objects this library are divided into several logical groups:
 - [Security](usage/security.md)
 - [Person](usage/person.md)
 - [Geography](usage/geography.md)
-- [Option](usage/option.md)
 - [Money](usage/money.md)
 - [Payment](usage/payment.md)
 - [Content](usage/content.md)
