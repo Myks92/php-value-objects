@@ -11,7 +11,6 @@ Value Objects this library are divided into several logical groups:
 - [Geography](usage/geography.md)
 - [Money](usage/money.md)
 - [Payment](usage/payment.md)
-- [Content](usage/content.md)
 - [Enum](usage/enum.md)
 
 This separation is only a structuring of the Value Objects in library. You can use these objects as you discretion.
