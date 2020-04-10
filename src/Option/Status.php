@@ -13,6 +13,6 @@ use Myks92\ValueObjects\String\StringLiteral;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Status extends StringLiteral
+class Status extends StringLiteral
 {
 }

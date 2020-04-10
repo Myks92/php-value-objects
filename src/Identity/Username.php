@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Username extends StringLiteral
+class Username extends StringLiteral
 {
     public const PATTERN_USERNAME = '/^([A-Za-z0-9]{5,31})$/';
 

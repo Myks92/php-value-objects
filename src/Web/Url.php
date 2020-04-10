@@ -14,7 +14,7 @@ use Myks92\ValueObjects\String\StringLiteral;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Url extends StringLiteral
+class Url extends StringLiteral
 {
     /**
      * @param string $value

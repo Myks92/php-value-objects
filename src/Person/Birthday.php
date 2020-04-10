@@ -16,7 +16,7 @@ use Myks92\ValueObjects\ValueObjectInterface;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Birthday implements ValueObjectInterface
+class Birthday implements ValueObjectInterface
 {
     /**
      * @var DateTimeImmutable

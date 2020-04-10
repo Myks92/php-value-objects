@@ -13,7 +13,7 @@ use Myks92\ValueObjects\Enum\Enum;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Currency extends Enum
+class Currency extends Enum
 {
     public const AED = 'AED';
     public const AFN = 'AFN';

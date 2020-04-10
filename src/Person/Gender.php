@@ -14,7 +14,7 @@ use ReflectionException;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Gender extends Enum
+class Gender extends Enum
 {
     /**
      * @var string value for male

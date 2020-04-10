@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Name implements ValueObjectInterface
+class Name implements ValueObjectInterface
 {
     /**
      * Last

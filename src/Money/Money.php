@@ -15,7 +15,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Money implements ValueObjectInterface
+class Money implements ValueObjectInterface
 {
     /**
      * Amount

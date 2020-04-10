@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class Port extends Integer
+class Port extends Integer
 {
     /**
      * @param int $value

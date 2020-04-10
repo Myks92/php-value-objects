@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-final class File implements ValueObjectInterface
+class File implements ValueObjectInterface
 {
     /**
      * Path to file
