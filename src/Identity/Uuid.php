@@ -8,7 +8,7 @@ namespace Myks92\ValueObjects\Identity;
 
 use Exception;
 use Myks92\ValueObjects\String\StringLiteral;
-use Ramsey\Uuid\Uuid;
+use Ramsey\Uuid\Uuid as UuidRamsey;
 use Webmozart\Assert\Assert;
 
 /**
@@ -16,7 +16,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Id extends StringLiteral
+class Uuid extends StringLiteral
 {
     /**
      * @param string $value
@@ -35,6 +35,6 @@ class Id extends StringLiteral
      */
     public static function generate(): self
     {
-        return new self(Uuid::uuid4()->toString());
+        return new self(UuidRamsey::uuid4()->toString());
     }
 }

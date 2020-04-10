@@ -1,14 +1,13 @@
 # Identity
 This groups Value Objects use for identity, e.g. for auth to users in your project. Or for another Entities.
 
-## Id
+## Uuid
 ```php
-use Myks92\ValueObjects\Identity\Id;
-use Ramsey\Uuid\Uuid;
+use Myks92\ValueObjects\Identity\Uuid;
 
-$id = new Id(Uuid::uuid4()->toString());
-$id->getValue(); //UUID4
-$id->isEqualTo(new Id(Uuid::uuid4()->toString())); //false
+$id = new Uuid('ccf4597-9d46-4bb4-b399-fdaf8db24bf0');
+$id->getValue(); //ccf4597-9d46-4bb4-b399-fdaf8db24bf0
+$id->isEqualTo(new Uuid('ccf4597-9d46-4bb4-b399-fdaf8db24bf0')); //true
 ```
 
 ## Email
