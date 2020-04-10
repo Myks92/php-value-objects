@@ -6,6 +6,7 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Person;
 
 use DateTimeImmutable;
+use DateTimeInterface;
 use Exception;
 use InvalidArgumentException;
 
@@ -17,16 +18,16 @@ use InvalidArgumentException;
 class Birthday
 {
     /**
-     * @var DateTimeImmutable
+     * @var DateTimeInterface
      */
-    private DateTimeImmutable $date;
+    private DateTimeInterface $date;
     /**
      *
-     * @param DateTimeImmutable $date
+     * @param DateTimeInterface $date
      *
      * @throws Exception
      */
-    public function __construct(DateTimeImmutable $date)
+    public function __construct(DateTimeInterface $date)
     {
         $this->guard($date);
         $this->date = $date;
@@ -44,10 +45,10 @@ class Birthday
     }
 
     /**
-     * @return DateTimeImmutable
+     * @return DateTimeInterface
      * @throws Exception
      */
-    public function getDate(): DateTimeImmutable
+    public function getDate(): DateTimeInterface
     {
         return $this->date;
     }
@@ -73,11 +74,11 @@ class Birthday
     }
 
     /**
-     * @param DateTimeImmutable $date
+     * @param DateTimeInterface $date
      *
      * @throws Exception
      */
-    private function guard(DateTimeImmutable $date): void
+    private function guard(DateTimeInterface $date): void
     {
         $now = new DateTimeImmutable();
 
