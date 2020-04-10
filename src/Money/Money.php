@@ -19,9 +19,9 @@ class Money
     /**
      * Amount
      *
-     * @var int
+     * @var float
      */
-    private int $amount;
+    private float $amount;
     /**
      * Currency
      *
@@ -30,10 +30,10 @@ class Money
     private Currency $currency;
 
     /**
-     * @param int $amount
+     * @param float $amount
      * @param Currency $currency
      */
-    public function __construct(int $amount, Currency $currency)
+    public function __construct(float $amount, Currency $currency)
     {
         $this->amount = $amount;
         $this->currency = $currency;
@@ -43,20 +43,20 @@ class Money
      * Add an integer quantity to the amount and returns a new Money object.
      * Use a negative quantity for subtraction.
      *
-     * @param int $quantity quantity to add
+     * @param float $quantity quantity to add
      *
      * @return Money
      */
-    public function add(int $quantity): Money
+    public function add(float $quantity): Money
     {
         $amount = $this->getAmount() + $quantity;
         return new static($amount, $this->getCurrency());
     }
 
     /**
-     * @return int
+     * @return float
      */
-    public function getAmount(): int
+    public function getAmount(): float
     {
         return $this->amount;
     }

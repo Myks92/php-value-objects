@@ -22,6 +22,14 @@ class MoneyTest extends TestCase
         self::assertEquals($currency, $money->getCurrency());
     }
 
+    public function testNotInteger(): void
+    {
+        $money = new Money($amount = 100.66, $currency = $this->createCurrency());
+
+        self::assertEquals($amount, $money->getAmount());
+        self::assertEquals($currency, $money->getCurrency());
+    }
+
     public function testToString(): void
     {
         $money = new Money($amount = 100, $currency = $this->createCurrency());
