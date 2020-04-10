@@ -2,18 +2,15 @@
 
 declare(strict_types=1);
 
-
 namespace Myks92\ValueObjects\Payment;
 
-
-use Myks92\ValueObjects\ValueObjectInterface;
 
 /**
  * Defines the minimum requisites of a Payment Object.
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Payment implements ValueObjectInterface
+class Payment
 {
     /**
      * @var string $method The payment name or title.

@@ -5,18 +5,16 @@ declare(strict_types=1);
 
 namespace Myks92\ValueObjects\Person;
 
-
 use DateTimeImmutable;
 use Exception;
 use InvalidArgumentException;
-use Myks92\ValueObjects\ValueObjectInterface;
 
 /**
  * Class Birthday
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Birthday implements ValueObjectInterface
+class Birthday
 {
     /**
      * @var DateTimeImmutable

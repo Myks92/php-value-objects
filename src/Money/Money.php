@@ -7,7 +7,6 @@ namespace Myks92\ValueObjects\Money;
 
 
 use InvalidArgumentException;
-use Myks92\ValueObjects\ValueObjectInterface;
 use Webmozart\Assert\Assert;
 
 /**
@@ -15,7 +14,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Money implements ValueObjectInterface
+class Money
 {
     /**
      * Amount

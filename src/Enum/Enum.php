@@ -6,7 +6,6 @@ namespace Myks92\ValueObjects\Enum;
 
 
 use InvalidArgumentException;
-use Myks92\ValueObjects\ValueObjectInterface;
 use ReflectionClass;
 use ReflectionException;
 use Webmozart\Assert\Assert;
@@ -18,7 +17,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-abstract class Enum implements ValueObjectInterface
+abstract class Enum
 {
     /**
      * Store existing constants in a static cache per object.

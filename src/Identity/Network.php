@@ -6,7 +6,6 @@ declare(strict_types=1);
 namespace Myks92\ValueObjects\Identity;
 
 
-use Myks92\ValueObjects\ValueObjectInterface;
 use Webmozart\Assert\Assert;
 
 /**
@@ -14,7 +13,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Network implements ValueObjectInterface
+class Network
 {
     /**
      * @var string

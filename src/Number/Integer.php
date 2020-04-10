@@ -2,18 +2,15 @@
 
 declare(strict_types=1);
 
-
 namespace Myks92\ValueObjects\Number;
 
-
-use Myks92\ValueObjects\ValueObjectInterface;
 
 /**
  * Class Integer
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-abstract class Integer implements ValueObjectInterface
+abstract class Integer
 {
     /**
      * @var int

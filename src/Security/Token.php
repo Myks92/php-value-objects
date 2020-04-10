@@ -8,7 +8,6 @@ namespace Myks92\ValueObjects\Security;
 
 use DateTimeImmutable;
 use DomainException;
-use Myks92\ValueObjects\ValueObjectInterface;
 use Webmozart\Assert\Assert;
 
 /**
@@ -16,7 +15,7 @@ use Webmozart\Assert\Assert;
  *
  * @author Maxim Vorozhtsov <myks1992@mail.ru>
  */
-class Token implements ValueObjectInterface
+class Token
 {
     /**
      * Value
