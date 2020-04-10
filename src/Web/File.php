@@ -88,8 +88,10 @@ class File
      */
     public function isEqualTo(self $file): bool
     {
-        return $this->getPath() === $file->getPath() && $this->getName() === $file->getName() && $this->getSize(
-            ) === $file->getSize();
+        return
+            $this->getPath() === $file->getPath() &&
+            $this->getName() === $file->getName() &&
+            $this->getSize() === $file->getSize();
     }
 
     /**
