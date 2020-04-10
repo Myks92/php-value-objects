@@ -10,6 +10,7 @@ This groups Value Objects use for any options, e.g status, role, gender or anoth
 Static methods:
 * `toArray()` method Returns all possible values as an array (constant name in key, constant value in value)
 
+### Example Status VO
 ```php
 use Myks92\ValueObjects\Enum\Enum;
 
@@ -74,4 +75,88 @@ class Status extends Enum
     private const ACTIVE = 'active';
     private const BLOCKED = 'blocked';
 }
+```
+
+### Example Gender VO
+```php
+use Myks92\ValueObjects\Enum\Enum;
+
+/**
+ * @method static Gender male()
+ * @method static Gender female()
+ * @method static Gender other()
+ */
+class Gender extends Enum
+{
+    /**
+     * @var string value for male
+     */
+    public const MALE = 'male';
+    /**
+     * @var string value for female
+     */
+    public const FEMALE = 'female';
+    /**
+     * @var string value for other
+     */
+    public const OTHER = 'other';
+
+    /**
+     * Create male
+     *
+     * @return static
+     */
+    public static function male(): self
+    {
+        return new self(self::MALE);
+    }
+
+    /**
+     * Create female
+     *
+     * @return static
+     */
+    public static function female(): self
+    {
+        return new self(self::FEMALE);
+    }
+
+    /**
+     * Create other
+     *
+     * @return static
+     */
+    public static function other(): self
+    {
+        return new self(self::OTHER);
+    }
+
+    /**
+     * @return bool
+     */
+    public function isMale(): bool
+    {
+        return $this->getValue() === self::MALE;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isFemale(): bool
+    {
+        return $this->getValue() === self::FEMALE;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isOther(): bool
+    {
+        return $this->getValue() === self::OTHER;
+    }
+}
+// Static method:
+$gender = Gender::male();
+$gender = Gender::female();
+$gender = Gender::other();
 ```
