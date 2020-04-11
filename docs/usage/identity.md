@@ -25,17 +25,6 @@ $phone->getFull(); //79995552233
 $phone->isEqualTo(new Phone(7, '9997772233')); //false
 ```
 
-## Network
-```php
-use Myks92\ValueObjects\Identity\Network;
-
-$network = new Network('vk', '1000023');
-$network->getName(); //vk
-$network->getIdentity(); //1000023
-
-$network->isEqualTo(new Network('vk', '11123')); //false
-```
-
 ## Username
 ```php
 use Myks92\ValueObjects\Identity\Username;
