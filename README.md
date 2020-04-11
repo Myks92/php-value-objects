@@ -9,7 +9,6 @@
 
 Branch | Travis |
 ------ | ------ |
-1.x   | [![Build Status][badge-travis-1x]][travis-1x]
 master | [![Build Status][badge-travis-unstable]][travis-unstable]
 
 A set of PHP Value Objects to manage simple and composite values.
@@ -52,7 +51,6 @@ Please see [CHANGELOG][] for more information on what has changed recently.
 The MIT License (MIT). Please see [LICENSE][] for more information.
 
 [badge-php]: https://img.shields.io/packagist/php-v/Myks92/php-value-objects.svg?style=flat-square
-[badge-travis-1x]: https://travis-ci.org/Myks92/php-value-objects.svg?branch=1.x
 [badge-travis-unstable]: https://travis-ci.org/Myks92/php-value-objects.svg?branch=master
 
 [documentation]: https://github.com/Myks92/php-value-objects/blob/master/docs/readme.md
@@ -61,5 +59,4 @@ The MIT License (MIT). Please see [LICENSE][] for more information.
 [changelog]: https://github.com/Myks92/php-value-objects/blob/master/CHANGELOG.md
 [license]: https://github.com/Myks92/php-value-objects/blob/master/LICENSE.md
 [php]: https://php.net
-[travis-1x]: https://travis-ci.org/Myks92/php-value-objects
 [travis-unstable]: https://travis-ci.org/Myks92/php-value-objects
