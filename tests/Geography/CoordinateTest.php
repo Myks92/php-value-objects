@@ -10,6 +10,9 @@ use InvalidArgumentException;
 use Myks92\ValueObjects\Geography\Coordinate;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Geography\Coordinate
+ */
 class CoordinateTest extends TestCase
 {
     public function testSuccess(): void

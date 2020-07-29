@@ -10,6 +10,9 @@ use DateTimeImmutable;
 use Myks92\ValueObjects\Security\Token;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Security\Token::validate
+ */
 class ValidateTest extends TestCase
 {
     public function testSuccess(): void

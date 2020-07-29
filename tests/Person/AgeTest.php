@@ -10,6 +10,9 @@ use InvalidArgumentException;
 use Myks92\ValueObjects\Person\Age;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Person\Age
+ */
 class AgeTest extends TestCase
 {
     public function testSuccess(): void

@@ -10,6 +10,9 @@ use InvalidArgumentException;
 use Myks92\ValueObjects\Web\Port;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Web\Port
+ */
 class PortTest extends TestCase
 {
     public function testSuccess(): void

@@ -10,6 +10,9 @@ use InvalidArgumentException;
 use Myks92\ValueObjects\Identity\Email;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Identity\Email
+ */
 class EmailTest extends TestCase
 {
     public function testSuccess(): void

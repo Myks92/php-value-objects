@@ -10,6 +10,9 @@ use InvalidArgumentException;
 use Myks92\ValueObjects\Identity\Username;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Identity\Username
+ */
 class UsernameTest extends TestCase
 {
     public function testSuccess(): void

@@ -11,6 +11,9 @@ use InvalidArgumentException;
 use Myks92\ValueObjects\Security\Token;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Security\Token
+ */
 class CreateTest extends TestCase
 {
     public function testSuccess(): void

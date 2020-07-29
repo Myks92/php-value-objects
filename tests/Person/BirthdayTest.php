@@ -11,6 +11,9 @@ use Myks92\ValueObjects\Person\Age;
 use Myks92\ValueObjects\Person\Birthday;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Person\Birthday
+ */
 class BirthdayTest extends TestCase
 {
     public function testSuccess(): void

@@ -10,6 +10,9 @@ use InvalidArgumentException;
 use Myks92\ValueObjects\Web\Ip;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Web\Ip
+ */
 class IpTest extends TestCase
 {
     public function testSuccess(): void

@@ -10,6 +10,9 @@ use InvalidArgumentException;
 use Myks92\ValueObjects\Money\Currency;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Money\Currency
+ */
 class CurrencyTest extends TestCase
 {
     public function testSuccess(): void

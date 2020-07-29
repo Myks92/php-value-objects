@@ -9,6 +9,9 @@ namespace Myks92\ValueObjects\Tests\Payment;
 use Myks92\ValueObjects\Payment\Payment;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Payment\Payment
+ */
 class PaymentTest extends TestCase
 {
     public function testSuccess(): void

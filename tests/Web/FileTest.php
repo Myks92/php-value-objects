@@ -10,6 +10,9 @@ use InvalidArgumentException;
 use Myks92\ValueObjects\Web\File;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Web\File
+ */
 class FileTest extends TestCase
 {
     public function testSuccess(): void

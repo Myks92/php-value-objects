@@ -8,6 +8,9 @@ namespace Myks92\ValueObjects\Tests\Enum;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Enum\Enum
+ */
 class EnumTest extends TestCase
 {
     public function testSuccessString(): void

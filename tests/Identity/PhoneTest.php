@@ -10,6 +10,9 @@ use InvalidArgumentException;
 use Myks92\ValueObjects\Identity\Phone;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Identity\Phone
+ */
 class PhoneTest extends TestCase
 {
     public function testSuccess(): void

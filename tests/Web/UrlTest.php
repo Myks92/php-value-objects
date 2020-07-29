@@ -10,6 +10,9 @@ use InvalidArgumentException;
 use Myks92\ValueObjects\Web\Url;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \Myks92\ValueObjects\Web\Url
+ */
 class UrlTest extends TestCase
 {
     public function testSuccess(): void

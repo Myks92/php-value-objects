@@ -12,6 +12,9 @@ use Myks92\ValueObjects\Money\Money;
 use PHPUnit\Framework\TestCase;
 use ReflectionException;
 
+/**
+ * @covers \Myks92\ValueObjects\Money\Money
+ */
 class MoneyTest extends TestCase
 {
     public function testSuccess(): void
