@@ -14,10 +14,10 @@
   "require": {
     "php": "^7.4",
     "ext-mbstring": "*",
+    "phpunit/phpunit": "^9.2",
     "webmozart/assert": "^1.9"
   },
   "require-dev": {
-    "phpunit/phpunit": "^8.5"
   },
   "config": {
     "preferred-install": {
